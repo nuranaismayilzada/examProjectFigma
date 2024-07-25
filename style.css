@@ -1,0 +1,417 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto-Bold.ttf") format('truetype');
+}
+.container{
+    width: 1180px;
+    margin: auto;
+}
+.mainSection>img{
+    margin-top: 2%;   
+}
+.iconAndTitle{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    gap: 3%;
+}
+.iconAndTitle div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.bigImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bigImage .leftSide{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-right: 15%;
+}
+.bigImage .leftSide>h1{
+    font-size: 360%;
+    line-height: 100%;
+    text-align: left;    
+    width: 80%;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.bigImage .leftSide p{
+    font-size:125%;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 2%;  
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    width: 70%;
+}
+
+.bigImage .images {
+    position: relative;
+    display: inline-block;
+}
+
+.bigImage .images img {
+    display: block;
+    max-width: 100%;
+}
+
+.bigImage .images .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.bigImage .images .man {
+    position: relative;
+    z-index: 1;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+        /* Kişiyi 20px yukarı kaldırıyoruz */
+    }
+    100% {
+        transform: translateY(0);
+        /* Kişiyi orijinal konumuna geri döndürüyoruz */
+    }
+}
+
+.textArea{
+    display: flex;
+    flex-direction: column;
+    background: #1E4681;
+    width: 35%;
+    height: 15vh;
+    border-radius: 5px 0px 0px 0px;
+    margin: auto;
+    margin-top: 4%;
+    padding-top: 2%;
+    align-items: center;
+}
+.textArea>p{
+    font-family: "Roboto Slab", sans-serif;
+    color: #FFFFFF;
+    width: 90%;
+}
+.textArea div{
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    color: white;
+    font-family: "Roboto", sans-serif;   
+}
+@media screen and (max-width:834px) {
+    .container{
+        width: 700px;
+        margin: auto;
+    }
+   
+    .mainSection>img{
+        margin-top: 5%;   
+    }
+    .iconAndTitle div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+    }
+    .bigImage{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .bigImage .leftSide{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        margin-right: 15%;
+    }
+    .bigImage .leftSide>h1{
+        font-size: 250%;
+    }
+    .bigImage .leftSide p{
+        font-size:104%;
+        line-height: 130%;
+        margin-top: 6%;  
+        font-family: "Roboto", sans-serif;
+        width: 90%;
+    }
+    
+    .textArea{
+        display: flex;
+        flex-direction: column;
+        background: #1E4681;
+        width: 50%;
+        height: 18vh;
+        border-radius: 5px 0px 0px 0px;
+        margin: auto;
+        padding-top: 4%;
+        align-items: center;
+        margin-top: 8%;
+    }
+    .textArea>p{
+        font-family: "Roboto Slab", sans-serif;
+        color: #FFFFFF;
+        width: 90%;
+    }
+    .textArea div{
+        align-self: flex-end;
+        margin-top: auto;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        color: white;
+        font-family: "Roboto", sans-serif;   
+    }
+}
+@media screen and (max-width:375px) {
+    .container{
+        width: 320px;
+        margin: auto;
+    }
+    .mainSection>img{
+        width: 40%;
+        margin-top:25%;   
+    }
+    .mainSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .iconAndTitle{
+        display: flex;
+        flex-direction: row;
+        margin-top: 15%;
+        gap: 4%;
+    }
+    .iconAndTitle div img{
+        width: 13%;
+    }
+    .iconAndTitle div span{
+        font-size: 90%;
+    }
+    .iconAndTitle div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+    .bigImage{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .bigImage .leftSide{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        margin-right: 10%;
+    }
+    .bigImage .leftSide>h1{
+        font-size: 250%;
+        line-height: 100%;
+        text-align: left;    
+        width: 100%;
+        margin-top: 20%;
+        font-family: "Roboto Slab", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .bigImage .leftSide p{
+        font-size:125%;
+        font-weight: 400;
+        line-height: 90%;
+        margin-top: 10%;  
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        width: 100%;
+    }
+    
+    .bigImage .images {
+        position: relative;
+        display: inline-block;
+        margin-top: 10%;
+        margin-left: 55%;
+        width: 50%;
+    }
+    
+    .bigImage .images img {
+        display: block;
+        width: 100%;
+    }
+    
+    .bigImage .images .shadow {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    
+    .bigImage .images .man {
+        position: relative;
+        z-index: 1;
+        animation: moveUpDown 2s ease-in-out infinite;
+    }
+    
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+            /* Kişiyi 20px yukarı kaldırıyoruz */
+        }
+        100% {
+            transform: translateY(0);
+            /* Kişiyi orijinal konumuna geri döndürüyoruz */
+        }
+    }
+    
+    .textArea{
+        display: flex;
+        flex-direction: column;
+        background: #1E4681;
+        width: 100%;
+        height: 15vh;
+        border-radius: 5px 0px 0px 0px;
+        margin: auto;
+        margin-top: 14%;
+        padding-top: 2%;
+        align-items: left;
+    }
+    .textArea>p{
+        font-family: "Roboto Slab", sans-serif;
+        color: #FFFFFF;
+        width: 90%;
+    }
+    .textArea div{
+        align-self: flex-end;
+        margin-top: auto;
+        margin-bottom: 5%;
+        margin-right: 5%;
+        color: white;
+        font-family: "Roboto", sans-serif;   
+    }
+    
+}
+.courseSection{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.courseSection>h2{
+    font-family: Roboto Slab;
+    font-size: 300%;
+    font-weight: 900;
+    text-align: left;    
+    color: #000;
+}
+.courseSection .photoSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.courseSection .photoSection .text{
+    width: 45%;
+    line-height: 110%;
+    margin-right: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 14%;
+}
+.courseSection .photoSection .text p{
+    font-family: "Roboto";
+    text-align: left;
+}
+.photoSection .images {
+    position: relative;
+    display: inline-block;
+}
+
+.photoSection .images img {
+    display: block;
+    width: 100%;
+}
+
+.photoSection .images .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.photoSection .images .man {
+    position: relative;
+    z-index: 1;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+.clock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.clock .images{
+    position: relative;
+    display: inline-block;
+}
+
+.clock .images img {
+    display: block;
+    width: 100%;
+}
+
+.clock .images .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.clock .images .man {
+    position: relative;
+    z-index: 1;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+.clock div{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.clock div h3{
+    font-family: Roboto;
+    font-size: 150%;
+    font-weight: 700;
+    text-align: left;    
+}
+.clock div p{
+    margin-top: 6%;
+    font-family: "Roboto";
+    font-size: 90%;
+    font-weight: 400;
+    line-height: 23.4px;
+}
