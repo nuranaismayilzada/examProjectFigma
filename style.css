@@ -359,7 +359,7 @@
 
 .photoSection .images .shadow {
     position: absolute;
-    bottom: 0;
+    bottom: -10%;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -370,24 +370,25 @@
     z-index: 1;
     animation: moveUpDown 2s ease-in-out infinite;
 }
-.clock{
+.clockSection{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 10%;
+    gap: 15%;
 }
-.clock .images{
+.clockSection .images{
     position: relative;
     display: inline-block;
 }
 
-.clock .images img {
+.clockSection .images img {
     display: block;
     width: 100%;
 }
 
-.clock .images .shadow {
+.clockSection .images .shadow {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -395,23 +396,23 @@
     z-index: -1;
 }
 
-.clock .images .man {
+.clockSection .images .man {
     position: relative;
     z-index: 1;
     animation: moveUpDown 2s ease-in-out infinite;
 }
-.clock div{
+.clockSection div{
     width: 10%;
     display: flex;
     flex-direction: column;
 }
-.clock div h3{
+.clockSection div h3{
     font-family: Roboto;
     font-size: 150%;
     font-weight: 700;
     text-align: left;    
 }
-.clock div p{
+.clockSection div p{
     margin-top: 6%;
     font-family: "Roboto";
     font-size: 90%;
@@ -425,7 +426,7 @@
     }
     .courseSection{
         margin-top: 10%;
-        margin-left: 10%;
+        margin-left: 0%;
         display: flex;
         flex-direction: column;
     }
@@ -465,12 +466,12 @@
         display: block;
         width: 60%;
         left: 40%;
-        bottom: -30%;
+        bottom: -10%;
     }
     
     .photoSection .images .shadow {
         position: absolute;
-        bottom: 0;
+        bottom: 15%;
         left: 70%;
         transform: translateX(-50%);
         z-index: -1;
@@ -481,54 +482,54 @@
         z-index: 1;
         animation: moveUpDown 2s ease-in-out infinite;
     }
-    .clock{
+    .clockSection{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         margin-top: 15%;
-        margin-left: 5%;
+        margin-left: 0%;
     }
-    .clock .images{
+    .clockSection .images{
         position: relative;
         display: inline-block;
     }
     
-    .clock .images img {
+    .clockSection .images img {
         display: block;
-        width: 90%;
+        width: 150%;
     }
     
-    .clock .images .shadow {
+    .clockSection .images .shadow {
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: 70%;
         transform: translateX(-50%);
         z-index: -1;
     }
     
-    .clock .images .man {
+    .clockSection .images .man {
         position: relative;
         z-index: 1;
         animation: moveUpDown 2s ease-in-out infinite;
     }
-    .clock div{
+    .clockSection div{
         width: 40%;
         display: flex;
         flex-direction: column;
     }
-    .clock div h3{
+    .clockSection div h3{
         font-family: Roboto;
-        font-size: 150%;
+        font-size: 130%;
         font-weight: 700;
         text-align: left;    
     }
-    .clock div p{
+    .clockSection div p{
         margin-top: 6%;
         font-family: "Roboto";
-        font-size: 90%;
+        font-size: 70%;
         font-weight: 400;
-        line-height: 23.4px;
+        line-height: 200%;
     }
 }
 
@@ -541,6 +542,7 @@
         margin-top: 30%;
         display: flex;
         flex-direction: column;
+        margin-left: 5%;
     }
     .courseSection>h2{
         font-family: Roboto Slab;
@@ -595,48 +597,33 @@
         z-index: 1;
         animation: moveUpDown 2s ease-in-out infinite;
     }
-    .clock{
+    .clockSection{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 5%;
+        justify-content: stretch;
+        align-items:center;
+        margin-top: 25%;
+        margin-left: 10%;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 400px;
     }
-    .clock .images{
-        position: relative;
-        display: inline-block;
+    .clockSection .images{
+        display: none;
     }
-    
-    .clock .images img {
-        display: block;
-        width: 100%;
-    }
-    
-    .clock .images .shadow {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-    
-    .clock .images .man {
-        position: relative;
-        z-index: 1;
-        animation: moveUpDown 2s ease-in-out infinite;
-    }
-    .clock div{
-        width: 10%;
+  
+    .clockSection div{
+        width: 150px;
         display: flex;
         flex-direction: column;
     }
-    .clock div h3{
+    .clockSection div h3{
         font-family: Roboto;
         font-size: 150%;
         font-weight: 700;
         text-align: left;    
     }
-    .clock div p{
+    .clockSection div p{
         margin-top: 6%;
         font-family: "Roboto";
         font-size: 90%;
