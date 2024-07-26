@@ -527,9 +527,9 @@
     .clockSection div p{
         margin-top: 6%;
         font-family: "Roboto";
-        font-size: 70%;
+        font-size: 90%;
         font-weight: 400;
-        line-height: 200%;
+        line-height: 150%;
     }
 }
 
@@ -631,4 +631,149 @@
         line-height: 23.4px;
     }
     
+}
+
+.formatSection{
+    margin-top: 15%;
+}
+.formatSection>h1{
+    font-family: Roboto Slab;
+    font-size: 280%;
+    font-weight: 700;
+    text-align: left;    
+}
+.formatSection .texts{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.formatSection .texts div{
+    width: 20%;
+}
+.formatSection .texts div h3{
+    font-family: Roboto;
+    font-size: 150%;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: left;
+    color: #1E4681;
+}
+.formatSection .texts div p{
+    font-family: Roboto;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;    
+}
+@media screen and (max-width:834px) {
+    .container{
+        width: 700px;
+        margin: auto;
+    }
+    .formatSection{
+        margin-top: 25%;
+    }
+    .formatSection>h1{
+        font-family: Roboto Slab;
+        font-size: 280%;
+        font-weight: 700;
+        text-align: left;    
+    }
+    .formatSection .texts{
+        margin-top: 10%;
+        display: flex;
+        gap: 10%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .formatSection .texts div{
+        width: 40%;
+    }
+    .formatSection .texts div h3{
+        font-family: Roboto;
+        font-size: 100%;
+        font-weight: 700;
+        line-height: 100%;
+        text-align: left;
+        color: #1E4681;
+    }
+    .formatSection .texts div p{
+        font-family: Roboto;
+        font-size: 100%;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: 10%;
+        text-align: left;    
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        width: 320px;
+        margin: auto;
+    }
+    .formatSection{
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+    .formatSection>h1{
+        font-family: Roboto Slab;
+        font-size: 200%;
+        font-weight: 700;
+        text-align: left;    
+    }
+    .formatSection .texts{
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formatSection .texts div{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .formatSection .texts div h3{
+        font-family: Roboto;
+        font-size: 150%;
+        font-weight: 700;
+        line-height: 150%;
+        text-align: left;
+        color: #1E4681;
+    }
+    .formatSection .texts div p{
+        font-family: Roboto;
+        font-size: 100%;
+        font-weight: 400;
+        line-height: 150%;
+        text-align: left;    
+    }
+}
+.listSection{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.listSection>h1{
+    font-family: Roboto Slab;
+    font-size: 300%;
+    font-weight: 700;
+    line-height: 30%;
+    text-align: left;    
+}
+.listSection ul{
+    margin-top: 7%;
+    margin-left: 2%;
+    width: 60%;
+}
+.listSection ul li{
+    font-family: Roboto;
+    font-size: 150%;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;     
 }
