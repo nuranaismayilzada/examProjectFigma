@@ -1018,3 +1018,194 @@
         margin-bottom: 5%;
     }
 }
+.courseSectionn .container{
+    width: 1180px;
+    margin: auto;
+}
+.courseSectionn{
+    background: #EFEFEF;
+    padding-bottom: 5%;
+}
+.courseSectionn .container>h1{
+    padding-top: 5%;
+    font-family: Roboto Slab;
+    font-size: 270%;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: left;    
+}
+.courseSectionn .container button{
+    width: 45%;
+    gap: 0px;
+    opacity: 0px;       
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px 0px #d7d7d740;
+    margin-top: 7%;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: column;   
+    border: none;
+}
+.courseSectionn .container button>p{
+    width:80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.courseSectionn .container button .avatar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.courseSectionn .container button .avatar>img{
+    width:40%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.courseSectionn .container button .avatar .facebookAndTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.courseSectionn .container button .avatar .facebookAndTitle>h3{
+    margin-top: 20%;
+    font-family: Roboto Slab;
+    font-size: 130%;
+    font-weight: 900;
+    line-height: 150%;
+    text-align: left;    
+}
+.courseSectionn .container button .avatar .facebookAndTitle img{
+    width: 15%;
+}
+
+@media screen and (max-width:834px) {
+    .courseSectionn .container{
+        width: 700px;
+        margin: auto;
+    }
+    .courseSectionn{
+        background: #EFEFEF;
+        padding-bottom: 5%;
+    }
+    .courseSectionn .container>h1{
+        padding-top: 5%;
+        font-family: Roboto Slab;
+        font-size: 220%;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: left;    
+    }
+    .courseSectionn .container button{
+        width: 55%;
+        gap: 0px;
+        opacity: 0px;       
+        background: #FFFFFF;
+        box-shadow: 1px 1px 20px 0px #d7d7d740;
+        margin-top: 7%;
+        display: flex;
+        border-radius: 30px;
+        flex-direction: column;   
+        border: none;
+    }
+    .courseSectionn .container button>p{
+        width:85%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .courseSectionn .container button .avatar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .courseSectionn .container button .avatar>img{
+        width:35%;
+        margin-bottom: 10%;
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    .courseSectionn .container button .avatar .facebookAndTitle{
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+    .courseSectionn .container button .avatar .facebookAndTitle>h3{
+        margin-top: 25%;
+        font-family: Roboto Slab;
+        font-size: 130%;
+        font-weight: 900;
+        line-height: 120%;
+        text-align: left;    
+    }
+    .courseSectionn .container button .avatar .facebookAndTitle img{
+        width: 15%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:375px) {
+    .courseSectionn .container{
+        width: 320px;
+        margin: auto;
+    }
+    .courseSectionn{
+        background: #EFEFEF;
+        padding-bottom: 5%;
+        padding-left: 5%;
+    }
+    .courseSectionn .container>h1{
+        padding-top: 5%;
+        font-family: Roboto Slab;
+        font-size: 220%;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: left;    
+    }
+    .courseSectionn .container button{
+        width: 55%;
+        gap: 0px;
+        opacity: 0px;       
+        background: #FFFFFF;
+        box-shadow: 1px 1px 20px 0px #d7d7d740;
+        margin-top: 7%;
+        display: flex;
+        border-radius: 30px;
+        flex-direction: column;   
+        border: none;
+    }
+    .courseSectionn .container button>p{
+        width:85%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .courseSectionn .container button .avatar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .courseSectionn .container button .avatar>img{
+        width:35%;
+        margin-bottom: 10%;
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    .courseSectionn .container button .avatar .facebookAndTitle{
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+    .courseSectionn .container button .avatar .facebookAndTitle>h3{
+        margin-top: 25%;
+        font-family: Roboto Slab;
+        font-size: 130%;
+        font-weight: 900;
+        line-height: 120%;
+        text-align: left;    
+    }
+    .courseSectionn .container button .avatar .facebookAndTitle img{
+        width: 15%;
+        margin-left: 5%;
+    }
+}
