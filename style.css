@@ -3,15 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
-html,body{
-    width: 100%;
-}
+
 @font-face {
     font-family: "Roboto";
     src: url("./assets/fonts/Roboto-Bold.ttf") format('truetype');
 }
 .container{
-    width:1180px;
+    width:1280px;
     margin: auto;
 }
 .mainSection{
@@ -41,7 +39,7 @@ html,body{
     display: flex;
     flex-direction: column;
     margin-top: 2%;
-    margin-right: 15%;
+    margin-right: 25%;
 }
 .bigImage .leftSide>h1{
     font-size: 360%;
@@ -66,6 +64,7 @@ html,body{
 .bigImage .images {
     position: relative;
     display: inline-block;
+    right: 10%;
 }
 
 .bigImage .images img {
@@ -105,13 +104,11 @@ html,body{
     display: flex;
     flex-direction: column;
     background: #1E4681;
-    width: 35%;
-    height: 15vh;
+    width: 30%;
     border-radius: 5px 0px 0px 0px;
     margin: auto;
     margin-top: 4%;
-    padding-top: 2%;
-    align-items: center;
+    padding: 2%;
 }
 .textArea>p{
     font-family: "Roboto Slab", sans-serif;
@@ -120,15 +117,13 @@ html,body{
 }
 .textArea div{
     align-self: flex-end;
-    margin-top: auto;
-    margin-bottom: 5%;
-    margin-right: 5%;
+    margin: 5%;
     color: white;
     font-family: "Roboto", sans-serif;   
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .container{
-        width: 860px;
+        width: 940px;
         margin: auto;
     }
     .mainSection{
@@ -172,12 +167,11 @@ html,body{
         flex-direction: column;
         background: #1E4681;
         width: 50%;
-        height: 18vh;
         border-radius: 5px 0px 0px 0px;
         margin: auto;
         padding-top: 4%;
         align-items: center;
-        margin-top: 8%;
+        margin-top: 5%;
     }
     .textArea>p{
         font-family: "Roboto Slab", sans-serif;
@@ -186,9 +180,7 @@ html,body{
     }
     .textArea div{
         align-self: flex-end;
-        margin-top: auto;
-        margin-bottom: 5%;
-        margin-right: 5%;
+        margin: 5%;
         color: white;
         font-family: "Roboto", sans-serif;   
     }
@@ -225,23 +217,21 @@ html,body{
     }
     .mainSection>img{
         width: 40%;
-        margin-top:15%;  
-        
+        margin-top:15%;          
     }
     .mainSection{
         display: flex;
         flex-direction: column;
         margin-left: 15%;
-        width: 100%;
     }
     .iconAndTitle{
         display: flex;
         flex-direction: row;
-        margin-top: 15%;
+        margin-top: 10%;
         gap: 4%;
     }
     .iconAndTitle div img{
-        width: 13%;
+        width: 20%;
     }
     .iconAndTitle div span{
         font-size: 90%;
@@ -267,8 +257,7 @@ html,body{
         font-size: 250%;
         line-height: 100%;
         text-align: left;    
-        width: 100%;
-        margin-top: 20%;
+        margin-top: 15%;
         font-family: "Roboto Slab", sans-serif;
         font-weight: 900;
         font-style: normal;
@@ -276,7 +265,6 @@ html,body{
     .bigImage .leftSide p{
         font-size:125%;
         font-weight: 400;
-        line-height: 90%;
         margin-top: 10%;  
         font-family: "Roboto", sans-serif;
         font-weight: 400;
@@ -288,7 +276,8 @@ html,body{
         position: relative;
         display: inline-block;
         margin-top: 10%;
-        margin-left: 55%;
+        margin-left: 35%;
+        margin-right: 20%;
         width: 50%;
     }
     
@@ -330,12 +319,10 @@ html,body{
         flex-direction: column;
         background: #1E4681;
         width: 70%;
-        height: 15vh;
         border-radius: 5px 0px 0px 0px;
         margin: auto;
         margin-top: 14%;
-        padding-top: 2%;
-        align-items: left;
+        margin-left: 0%;
     }
     .textArea>p{
         font-family: "Roboto Slab", sans-serif;
@@ -345,8 +332,7 @@ html,body{
     .textArea div{
         align-self: flex-end;
         margin-top: auto;
-        margin-bottom: 5%;
-        margin-right: 5%;
+        margin: 5%;
         color: white;
         font-family: "Roboto", sans-serif;   
     }
@@ -374,10 +360,10 @@ html,body{
 .courseSection .photoSection .text{
     width: 45%;
     line-height: 110%;
-    margin-right: 45%;
     display: flex;
+    margin-right: 35%;
     flex-direction: column;
-    gap: 14%;
+    gap: 24%;
 }
 .courseSection .photoSection .text p{
     font-family: "Roboto";
@@ -386,17 +372,18 @@ html,body{
 .photoSection .images {
     position: relative;
     display: inline-block;
+    right: 10%;
 }
 
 .photoSection .images img {
     display: block;
-    width: 80%;
+    width: 60%;
 }
 
 .photoSection .images .shadow {
     position: absolute;
-    bottom:0%;
-    left: 30%;
+    bottom:-10%;
+    left: 20%;
     transform: translateX(-40%);
     z-index: -1;
 }
@@ -412,6 +399,7 @@ html,body{
     justify-content: space-around;
     align-items: center;
     margin-top: 10%;
+    margin-right: 10%;
 }
 .clockSection .images{
     position: relative;
@@ -454,9 +442,9 @@ html,body{
     font-weight: 400;
     line-height: 23.4px;
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .container{
-        width: 860px;
+        width: 940px;
         margin: auto;
     }
     .courseSection{
@@ -500,15 +488,15 @@ html,body{
     .photoSection .images img {
         display: block;
         width: 60%;
-        left: 10%;
+        left: 30%;
         bottom: -10%;
     }
     
     .photoSection .images .shadow {
         position: absolute;
-        bottom: 5%;
-        left: 40%;
-        transform: translateX(-50%);
+        bottom: 0%;
+        left: 60%;
+        transform: translateX(-40%);
         z-index: -1;
     }
     
@@ -520,10 +508,10 @@ html,body{
     .clockSection{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: flex-start;
         margin-top: 15%;
         margin-left: 0%;
+        gap: 30px;
     }
     .clockSection .images{
         position: relative;
@@ -532,7 +520,7 @@ html,body{
     
     .clockSection .images img {
         display: block;
-        width: 60%;
+        width:60%;
         left: 30%;
     }
     
@@ -553,10 +541,11 @@ html,body{
         width: 20%;
         display: flex;
         flex-direction: column;
+        gap: 40%;
     }
     .clockSection div h3{
         font-family: Roboto;
-        font-size: 130%;
+        font-size: 120%;
         font-weight: 700;
         text-align: left;    
     }
@@ -566,7 +555,7 @@ html,body{
         font-family: "Roboto";
         font-size: 90%;
         font-weight: 400;
-        line-height: 150%;
+        line-height: 80%;
     }
 }
 
@@ -579,7 +568,7 @@ html,body{
         margin-top: 30%;
         display: flex;
         flex-direction: column;
-        margin-left: 5%;
+        margin-left: 15%;
     }
     .courseSection>h2{
         font-family: Roboto Slab;
@@ -594,7 +583,7 @@ html,body{
         margin-top: 5%;
     }
     .courseSection .photoSection .text{
-        width: 100%;
+        width: 80%;
         line-height: 120%;
         margin-right: 0%;
         display: flex;
@@ -650,7 +639,7 @@ html,body{
     }
   
     .clockSection div{
-        width: 150px;
+        width: 40%;
         display: flex;
         flex-direction: column;
     }
@@ -665,7 +654,7 @@ html,body{
         font-family: "Roboto";
         font-size: 90%;
         font-weight: 400;
-        line-height: 23.4px;
+        line-height: 120%;
     }
     
 }
@@ -681,14 +670,15 @@ html,body{
     text-align: left;    
 }
 .formatSection .texts{
-    margin-top: 8%;
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    margin-right: 15%;
 }
 .formatSection .texts div{
-    width: 30%;
+    width: 25%;
+    height: 40%;
 }
 .formatSection .texts div h3{
     font-family: Roboto;
@@ -705,13 +695,13 @@ html,body{
     line-height: 150%;
     text-align: left;    
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .container{
-        width: 860px;
+        width: 940px;
         margin: auto;
     }
     .formatSection{
-        margin-top: 25%;
+        margin-top: 15%;
         margin-left: 5%;
     }
     .formatSection>h1{
@@ -721,15 +711,15 @@ html,body{
         text-align: left;    
     }
     .formatSection .texts{
-        margin-top: 10%;
+        margin-top: 5%;
         display: flex;
         gap: 0%;
         flex-direction: row;
         justify-content: space-around;
-        align-items: left;
     }
     .formatSection .texts div{
-        width: 40%;
+        width: 35%;
+        height: 40%;
     }
     .formatSection .texts div h3{
         font-family: Roboto;
@@ -746,7 +736,7 @@ html,body{
         line-height: 150%;
         margin-top: 10%;
         text-align: left;    
-        width: 50%;
+        width: 80%;
     }
 }
 
@@ -757,7 +747,7 @@ html,body{
     }
     .formatSection{
         margin-top: 25%;
-        margin-left: 10%;
+        margin-left: 15%;
     }
     .formatSection>h1{
         font-family: Roboto Slab;
@@ -766,7 +756,7 @@ html,body{
         text-align: left;    
     }
     .formatSection .texts{
-        margin-top: 8%;
+        margin-top: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -778,17 +768,17 @@ html,body{
     }
     .formatSection .texts div h3{
         font-family: Roboto;
-        font-size: 200%;
+        font-size: 150%;
         font-weight: 700;
-        line-height: 150%;
+        line-height: 100%;
         text-align: left;
         color: #1E4681;
     }
     .formatSection .texts div p{
         font-family: Roboto;
-        font-size: 150%;
+        font-size: 120%;
         font-weight: 400;
-        line-height: 150%;
+        line-height: 120%;
         text-align: left;    
     }
 }
@@ -798,6 +788,7 @@ html,body{
     flex-direction: column;
     justify-content: center;
     margin-left: 5%;
+    
 }
 .listSection>h1{
     font-family: Roboto Slab;
@@ -805,10 +796,11 @@ html,body{
     font-weight: 700;
     line-height: 30%;
     text-align: left;    
+    margin-left: 2%;
 }
 .listSection ul{
     margin-top: 7%;
-    margin-left: 2%;
+    margin-left: 5%;
     width: 60%;
 }
 .listSection ul li{
@@ -819,9 +811,9 @@ html,body{
     text-align: left;     
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .container{
-        width: 860px;
+        width: 940px;
         margin: auto;
     }
     .listSection>h1{
@@ -831,6 +823,9 @@ html,body{
         line-height: 30%;
         text-align: left;    
         margin-left: 3%;
+    }
+    .listSection{
+        margin-left: 0%;
     }
     .listSection ul{
         margin-top: 7%;
@@ -852,18 +847,18 @@ html,body{
         margin: auto;
     }
     .listSection{
-        margin-top: 45%;
+        margin-top: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 5%;
+        margin-left: 15%;
     }
     .listSection>h1{
         font-family: Roboto Slab;
         font-size: 300%;
         font-weight: 700;
-        line-height: 30%;
-        margin-bottom: 10%;
+        line-height: 90%;
+        margin-bottom: 5%;
         text-align: left;    
     }
     .listSection ul{
@@ -876,8 +871,9 @@ html,body{
         font-family: Roboto;
         font-size: 100%;
         font-weight: 400;
-        line-height: 120%;
-        text-align: left;     
+        line-height: 110%;
+        text-align: left;    
+        width: 70%; 
     }
 }
 
@@ -899,10 +895,10 @@ html,body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2%;
+    gap: 3%;
 }
 .cardSection .boxs .box{
-    width: 25%;
+    width: 31%;
     box-shadow: 1px 1px 15px 0px #00000040;
     border-radius: 30px;
     cursor: pointer;
@@ -932,9 +928,9 @@ html,body{
     margin-top: 5%;  
     width: 70%;
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .container{
-        width: 860px;
+        width: 940px;
         margin: auto;
     }
     .cardSection{
@@ -959,9 +955,9 @@ html,body{
         gap: 3%;
     }
     .cardSection .boxs .box{
-        width: 25%;
+        width: 30%;
         box-shadow: 1px 1px 15px 0px #00000040;
-        border-radius: 30px;
+        border-radius: 20px;
         cursor: pointer;
         padding-bottom: 2%;
         margin-top: 2%;
@@ -975,14 +971,14 @@ html,body{
     
     .cardSection .boxs .box .bottomSide>h2{
         font-family: Roboto;
-        font-size: 100%;
+        font-size: 70%;
         font-weight: 700;
-        line-height: 150%;
+        line-height: 120%;
         margin-left: 5%;
     }
     .cardSection .boxs .box .bottomSide p{
         font-family: Roboto;
-        font-size: 100%;
+        font-size: 60%;
         font-weight: 400;
         line-height: 100%;
         margin-left: 5%;  
@@ -992,23 +988,22 @@ html,body{
 }
 @media screen and (max-width:500px) {
     .container{
-        width: 400px;
+        width: 480px;
         margin: auto;
     }
     .cardSection{
         margin-top: 15%;
         margin-bottom: 10%;
-        margin-left: 5%;
+        margin-left: 15%;
     }
     .cardSection>h1{
         font-family: Roboto Slab;
         font-size: 200%;
-        width: 100%;
         font-weight: 700;
         line-height: 120%;
         text-align: start;
         margin-bottom: 5%;
-        margin-left: 0%;
+        margin-left: 5%;
     }
     .cardSection .boxs{
         display: flex;
@@ -1018,7 +1013,7 @@ html,body{
         margin-left: 5%;
     }
     .cardSection .boxs .box{
-        width: 100%;
+        width: 90%;
         box-shadow: 1px 1px 15px 0px #00000040;
         border-radius: 30px;
         cursor: pointer;
@@ -1050,293 +1045,231 @@ html,body{
         margin-bottom: 5%;
     }
 }
-.celovekSection{
-    background-color:#00000040;
+
+
+.greySection{
+    background-color: #EFEFEF;
 }
-.celovekSection .container>h1{
-    padding-top: 5%;
-    font-family: Roboto Slab;
-    font-size: 200%;
-    font-weight: 700;
-    line-height: 70%;
-    margin-top: 5%;
-    margin-left: 5%;
-}
-.celovekSection button{
-    width: 45%;
-    gap: 0px;
-    opacity: 0px;       
-    background: #FFFFFF;
-    box-shadow: 1px 1px 20px 0px #d7d7d740;
-    margin-top: 7%;
-    display: flex;
-    border-radius: 30px;
-    flex-direction: column;   
-    border: none;
-    margin-left: 5%;
-}
-.celovekSection button>p{
-    width:80%;
-    margin-top: 5%;
-    margin-left: 10%;
-}
-.celovekSection button .avatar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto; 
+    box-sizing: border-box;
 }
 
-.celovekSection button .avatar>img{
-    width:40%;
-    margin-bottom: 10%;
+.grey {
+    padding: 30px;
     margin-left: 5%;
-    margin-top: 5%;
 }
-.celovekSection button .avatar .facebookAndTitle{
+
+.grey h1 {
+    width: 100%; 
+    margin-bottom: 20px; 
+    font-size:200%; 
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+.grey button {
+    width: 45%; 
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px; 
+    box-sizing: border-box;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     gap: 10%;
+    box-shadow: 1px 1px 20px 0px #00000040;
 }
-.celovekSection button .avatar .facebookAndTitle>h3{
-    margin-top: 20%;
-    font-family: Roboto Slab;
-    font-size: 130%;
-    font-weight: 900;
-    line-height: 150%;
+.grey button>p{
+    margin: 3%;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
     text-align: left;    
 }
-.celovekSection button .avatar .facebookAndTitle img{
-    width: 15%;
+
+.avatarSide {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 10%;
 }
 
-@media screen and (max-width:900px) {
-    .celovekSection{
-        width: 860px;
-        margin: auto;
-    }
-    .celovekSection>h1{
-        font-family: Roboto Slab;
-        font-size: 140%;
-        font-weight: 700;
-        line-height: 100%;
-        text-align: left; 
-    }
-    .celovekSection button{
-        width: 55%;
-        gap: 0px;
-        opacity: 0px;       
-        background: #FFFFFF;
-        box-shadow: 1px 1px 20px 0px #d7d7d740;
-        margin-top: 7%;
-        display: flex;
-        border-radius: 30px;
-        flex-direction: column;   
-        border: none;
-    }
-    .celovekSection button>p{
-        width:85%;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-    .celovekSection button .avatar{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .celovekSection button .avatar>img{
-        width:35%;
-        margin-bottom: 10%;
-        margin-left: 0%;
-        margin-top: 5%;
-    }
-    .celovekSection button .avatar .facebookAndTitle{
-        display: flex;
-        flex-direction: column;
-        gap: 10%;
-    }
-    .celovekSection button .avatar .facebookAndTitle>h3{
-        margin-top: 25%;
-        font-family: Roboto Slab;
-        font-size: 130%;
-        font-weight: 900;
-        line-height: 120%;
-        text-align: left;    
-    }
-    .celovekSection button .avatar .facebookAndTitle img{
-        width: 15%;
-        margin-left: 5%;
-    }
+.avatarSide img {
+    width: 20%; 
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 5%;
 }
+.textPart{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+
+}
+.textPart h3 {
+    margin: 0;
+}
+.textPart img{
+    width: 20%;
+}
+
+@media screen and (max-width:1000px) {
+        
+.container {
+    max-width: 940px; 
+    width: 100%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+.grey {
+    padding: 30px;
+    margin-left: 5%;
+}
+
+.grey h1 {
+    width: 100%; 
+    margin-bottom: 20px; 
+    font-size:200%; 
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+.grey button {
+    width: 70%; 
+    padding: 10px 10px;
+    background-color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px; 
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    box-shadow: 1px 1px 20px 0px #00000040;
+}
+.grey button>p{
+    margin: 3%;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;    
+}
+
+.avatarSide {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 10%;
+}
+
+.avatarSide img {
+    width: 20%; 
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 5%;
+}
+.textPart{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+
+}
+.textPart h3 {
+    margin: 0;
+}
+.textPart img{
+    width: 20%;
+}
+}
+
+
 @media screen and (max-width:500px) {
-    .celovekSection{
-        max-width: 480px;
-        /* margin: auto; */
+    .greySection{
+        width: 530px;
+        background-color:#EFEFEF;
     }
-    .celovekSection>h1{
-        padding-top: 5%;
-        font-family: Roboto Slab;
-        font-size: 200%;
-        font-weight: 700;
-        line-height: 120%;
+    .container{
+        max-width: 480px; 
+        width: 100%; 
+        margin: 0 auto; 
+        box-sizing: border-box;
+    }
+    .grey {
+        padding: 20px;
+        width: 100%;
+        margin-right: -10%;
+    }
+
+    .grey h1 {
+        margin-bottom: 10px; 
+        font-size:120%; 
+        font-weight: 900;
+    }
+
+    .grey button {
+        width: 80%; 
+        padding: 30px 40px;
+        background-color: white;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 16px; 
+        box-sizing: border-box;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        box-shadow: 1px 1px 20px 0px #00000040;
+    }
+    .grey button>p{
+        margin: 3%;
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20px;
         text-align: left;    
     }
-    .celovekSection button{
-        width: 95%;
-        gap: 0px;
-        opacity: 0px;       
-        background: #FFFFFF;
-        box-shadow: 1px 1px 20px 0px #d7d7d740;
-        margin-top: 7%;
-        display: flex;
-        border-radius: 30px;
-        flex-direction: column;   
-        border: none;
-    }
-    .celovekSection button>p{
-        width:85%;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-    .celovekSection button .avatar{
+
+    .avatarSide {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        margin-top: 20px;
+        gap: 10%;
     }
-    
-    .celovekSection button .avatar>img{
-        width:35%;
-        margin-bottom: 10%;
-        margin-left: 0%;
-        margin-top: 5%;
+
+    .avatarSide img {
+        width: 30%; 
+        height: 30%;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 5%;
     }
-    .celovekSection button .avatar .facebookAndTitle{
+    .textPart{
         display: flex;
         flex-direction: column;
         gap: 10%;
     }
-    .celovekSection button .avatar .facebookAndTitle>h3{
-        margin-top: 25%;
-        font-family: Roboto Slab;
-        font-size: 100%;
-        font-weight: 900;
-        line-height: 120%;
-        text-align: left;    
+    .textPart h3 {
+        margin: 0;
+        font-size: 70%;
     }
-    .celovekSection button .avatar .facebookAndTitle img{
-        width: 15%;
-        margin-left: 5%;
-    }
-}
-
-
-@media screen and (max-width:1200px) {
-    .bigImage .images {
-        position: relative;
-        display: inline-block;
-        right: 20%;
-    }
-    
-    .bigImage .images img {
-        display: block;
-        max-width: 70%;
-    }
-    
-    .bigImage .images .shadow {
-        position: absolute;
-        bottom: -5%;
-        left: 40%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-    .textArea{
-        display: flex;
-        flex-direction: column;
-        background: #1E4681;
-        width: 35%;
-        height: 15vh;
-        border-radius: 5px 0px 0px 0px;
-        margin: auto;
-        margin-top: 10%;
-        padding-top: 2%;
-        align-items: center;
-        margin-left: 25%;
-    }
-    .courseSection .photoSection .text{
-        width: 45%;
-        line-height: 110%;
-        margin-right: 30%;
-        display: flex;
-        flex-direction: column;
-    }
-    .courseSection .photoSection .text p{
-        font-family: "Roboto";
-        text-align: left;
-    }
-    .photoSection .images {
-        position: relative;
-        right: 25%;
-        display: inline-block;
-    }
-    
-    .photoSection .images img {
-        display: block;
-        width: 80%;
-    }
-    
-    .photoSection .images .shadow {
-        position: absolute;
-        bottom: -10%;
-        left: 30%;
-        transform: translateX(-40%);
-        z-index: -1;
-    }
-    
-    .clockSection{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin-top: 10%;
-        margin-left:10% ;
-        gap: 5%;
-    }
-    .formatSection{
-        margin-top: 15%;
-        margin-left: 5%;
-    }
-    .formatSection>h1{
-        font-family: Roboto Slab;
-        font-size: 280%;
-        font-weight: 700;
-        text-align: left;    
-        margin-left: 5%;
-    }
-    .formatSection .texts{
-        margin-top: 8%;
-        display: flex;
-        flex-direction: row;
-        justify-content:flex-start;
-        align-items: center;
-        gap: 5%;
-    }
-    .formatSection .texts div{
+    .avatarSide .textPart img{
         width: 20%;
-    }
-    .formatSection .texts div h3{
-        font-family: Roboto;
-        font-size: 150%;
-        font-weight: 700;
-        line-height: 150%;
-        text-align: left;
-        color: #1E4681;
-    }
-    .formatSection .texts div p{
-        font-family: Roboto;
-        font-size: 100%;
-        font-weight: 400;
-        line-height: 150%;
-        text-align: left;    
+        height: 40%;
     }
 }
 
@@ -1351,6 +1284,7 @@ html,body{
     justify-content:center;
     gap: 50px;
     padding-bottom: 10%;
+    margin-left: 7%;
 }
 .rubSection .rub>h1{
     font-family: Roboto Slab;
@@ -1394,74 +1328,7 @@ html,body{
         font-weight: 400;
     }
 }
-footer{
-    background-color: black;
-}
-.footer{
-    display: flex;
-    flex-direction: column;
-    margin-left: 0%;
-    padding-top: 5%;
-}
-.footer .sinxron{
-    font-family: Roboto;
-    font-size: 100%;
-    font-weight: 400;
-    padding-bottom: 5%;
-    text-align: left;
-    color: white;    
-    margin-top: 15%;
-}
-.footer .textHisse{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.footer .textHisse .rightSide{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 0%;
-}
-.footer .textHisse .rightSide>img{
-    width: 40%;
-}
-.footer .textHisse .rightSide .icons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-.footer .textHisse .leftSide{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.footer .textHisse .leftSide div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10%;
-}
-.footer .textHisse .leftSide div p{
-    font-family: Roboto;
-    font-size: 150%;
-    font-weight: 400;
-    text-align: left;    
-    color: white;
-}
-@media screen and (max-width:900px) {
-    .container{
-        width: 860px;
-        margin: auto;
-    }
-    .rubSection{
-        background-color:#9DC9C8;   
-    }
+@media screen and (max-width:1000px) {
     .rubSection .rub{
         padding-top: 10%;
         display: flex;
@@ -1469,8 +1336,8 @@ footer{
         align-items: start;
         justify-content:center;
         gap: 30px;
+        margin-left: 7%;
         padding-bottom: 10%;
-        margin-left: 10%;
     }
     .rubSection .rub>h1{
         font-family: Roboto Slab;
@@ -1482,7 +1349,7 @@ footer{
         flex-direction: column;
         p{
             font-family: Roboto;
-            font-size: 90%;
+            font-size: 100%;
             font-weight: 400;
             margin-bottom: 5%;
         }
@@ -1496,15 +1363,15 @@ footer{
     .rubSection .rub .textss{
         display: flex;
         flex-direction: row;
-        gap: 3%;
+        gap: 5%;
     }
     .rubSection .rub .textss div{
-        width: 30%;
+        width: 25%;
         margin-top: 5%;
         h6{
             font-family: Roboto;
-            font-size: 150%;
-            font-weight: 400;
+            font-size: 120%;
+            font-weight: 600;
             margin-bottom: 5%;
         }
         p{
@@ -1514,66 +1381,226 @@ footer{
             font-weight: 400;
         }
     }
-    footer{
-        background-color: black;
+}
+
+@media screen and (max-width:500px) {
+    .rubSection{
+        background-color:#9DC9C8;   
+        width: 530px;
     }
-    .footer{
+    .container{
+        max-width: 480px; 
+        width: 100%; 
+        margin: 0 auto; 
+        box-sizing: border-box;
+    }
+    .rubSection .rub{
+        padding-top: 10%;
         display: flex;
         flex-direction: column;
-    }
-    footer .sinxron{
-        font-family: Roboto;
-        font-size: 100%;
-        font-weight: 400;
-        justify-self: end;
-        padding-bottom: 5%;
-        text-align: left;
-        color: white;    
-        margin-top: 15%;
-    }
-    .footer .textHisse{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .footer .textHisse .rightSide{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content:center;
         gap: 30px;
-        margin-top: 3%;
+        margin-left: 7%;
+        padding-bottom: 10%;
     }
-    .footer .textHisse .rightSide>img{
-        width: 30%;
+    .rubSection .rub>h1{
+        font-family: Roboto Slab;
+        font-size: 150%;
+        font-weight: 700;
     }
-    .footer .textHisse .rightSide .icons{
+    .rubSection .rub .rubMoney{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-family: Roboto;
+            font-size: 100%;
+            font-weight: 400;
+            margin-bottom: 5%;
+        }
+        h4{
+            font-family: Roboto;
+            font-size: 250%;
+            font-weight: 400;
+            text-align: left;        
+        }
+    } 
+    .rubSection .rub .textss{
         display: flex;
         flex-direction: row;
+        gap: 5%;
+    }
+    .rubSection .rub .textss div{
+        width: 45%;
+        margin-top: 5%;
+        h6{
+            font-family: Roboto;
+            font-size: 120%;
+            font-weight: 600;
+            margin-bottom: 5%;
+        }
+        p{
+            width: 80%;
+            font-family: Roboto;
+            font-size: 90%;
+            font-weight: 400;
+        }
+    }
+}
+.footerSection {
+    background: #000;
+}
+
+.footerSection .footer {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 140px;
+    margin-left: 7%;
+}
+
+.footerSection .footer p {
+    color: white;
+}
+
+.footerSection .footer .topSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100%;
+}
+
+.footerSection .footer .topSide .leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerSection .footer .topSide .leftSide > img {
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.footerSection .footer .topSide .leftSide .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footerSection .footer .topSide .rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerSection .footer .topSide .rightSide div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footerSection .footer .topSide .rightSide div span {
+    color: white;
+}
+
+.footer .sinxron {
+    font-family: Roboto;
+    font-size: 100%;
+    font-weight: 400;
+    padding-bottom: 5%;
+    text-align: left;
+    color: white;
+}
+@media (min-width: 1000px) {
+    .footerSection .footer {
+        padding-top: 5%;
+        margin-left: 7%;
+    }
+
+    .footerSection .footer .topSide {
+        flex-direction: row;
+    }
+
+    .footerSection .footer .topSide .leftSide {
+        flex-direction: column;
+    }
+
+    .footerSection .footer .topSide .rightSide {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1000px) {
+    .footerSection .footer {
+        margin-left: 3%;
+        gap: 60px;
+    }
+
+    .footerSection .footer .topSide {
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        gap: 30%;
+        justify-content: space-around;
+    }
+
+    .footerSection .footer .topSide .leftSide {
+        align-items: center;
+    }
+
+    .footerSection .footer .topSide .rightSide {
+        align-items: center;
+    }
+
+    .footerSection .footer .topSide .leftSide > img {
+        width: 80px;
+    }
+
+    .footerSection .footer .topSide .icons {
         gap: 20px;
     }
-    .footer .textHisse .rightSide .icons img{
-        width: 30px;
+}
+@media (max-width: 500px) {
+    .footerSection{
+        background-color: #000;
+        width: 530px;
     }
-    .footer .textHisse .leftSide{
-        display: flex;
+    .footerSection .footer {
+        margin-left: 0;
+        padding: 2% 0;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footerSection .footer .topSide {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        gap: 20%;
     }
-    .footer .textHisse .leftSide div{
-        display: flex;
-        flex-direction: row;
-        gap: 10%;
+
+    .footerSection .footer .topSide .leftSide > img {
+        width: 60px;
+        padding-top: 5%;
     }
-    .footer .textHisse .leftSide div p{
-        font-family: Roboto;
-        font-size: 120%;
-        font-weight: 400;
-        line-height: 25.35px;
-        text-align: left;    
-        color: white;
+
+    .footerSection .footer .topSide .icons {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
+    .footerSection .footer .topSide .rightSide {
+        align-items: center;
+    }
+
+    .footerSection .footer .topSide .rightSide div {
+        gap: 10px;
+    }
+
+    .footer .sinxron {
+        text-align: center;
     }
 }
